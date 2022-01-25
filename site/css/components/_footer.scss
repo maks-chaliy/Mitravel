@@ -1,0 +1,110 @@
+//-----footer-----
+.footer {
+  margin-top: auto;
+  background: #ffffff;
+  border-top: 1px solid rgba(179, 179, 179, 0.5);
+  padding-top: 125px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: var(--rangoon-green-color);
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 48px;
+      background-color: var(--aque-forest-color);
+      position: absolute;
+      left: 0;
+      bottom: -32px;
+    }
+  }
+
+  &__list {
+    margin-top: 64px;
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 29px;
+    color: #959ea6;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: var(--neptune-hover-color);
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(179, 179, 179, 0.5);
+    margin-top: 125px;
+    padding: 32px 0;
+
+    &_copiryght {
+      font-size: 13px;
+      line-height: 15px;
+      color: #959ea6;
+    }
+
+    &_inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_list {
+      display: flex;
+    }
+
+    &_item:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &_link {
+      color: #959ea6;
+      transition: color 0.3s linear;
+
+      &:hover {
+        color: var(--neptune-hover-color);
+      }
+    }
+  }
+}
+
+//-----subs-form----
+.subs-form {
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  &__field {
+    height: 63px;
+    padding-left: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(179, 179, 179, 0.5);
+    position: relative;
+    background-image: url(/site/img/svg/user.svg);
+    background-position: calc(100% - 31px) center;
+    background-repeat: no-repeat;
+  }
+
+  &__button {
+    background-color: var(--neptune-color);
+    padding: 25px 0;
+    margin-top: 16px;
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: var(--neptune-hover-color);
+    }
+  }
+}

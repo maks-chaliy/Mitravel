@@ -1,0 +1,14 @@
+@import "settings/_fonts.scss";
+@import "settings/_variables.scss";
+@import "settings/_global";
+@import "settings/_overal.scss";
+
+//-----components-----
+@import "../css/components/_header.scss";
+@import "../css/components/_intro.scss";
+@import "../css/components/_travel.scss";
+@import "../css/components/_featured.scss";
+@import "../css/components/_featured-videos.scss";
+@import "../css/components/_newsletter.scss";
+@import "../css/components/_inspirations.scss";
+@import "../css/components/_footer.scss";

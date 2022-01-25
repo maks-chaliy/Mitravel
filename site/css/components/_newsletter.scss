@@ -1,0 +1,79 @@
+//-----newsletter-----
+.newsletter {
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+  &__inner {
+    height: 798px;
+    background-color: var(--bg-image-color);
+    background-image: url(/site/img/newsletter_bg.png);
+    @include bg-image;
+    position: relative;
+  }
+
+  &__content {
+    color: var(--white-text-color);
+    width: 24%;
+    position: absolute;
+    left: 133px;
+    bottom: 178px;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+
+  &__derscr {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__form {
+    position: absolute;
+    bottom: -96px;
+    right: 133px;
+  }
+}
+
+//-----subscribe-form-----
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  &__field{
+    width: 360px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+    margin: 0 72px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    &:first-child{
+      margin-top: 72px;
+    }
+
+    &::placeholder{
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var (--dark-color);
+    }
+  }
+
+  &__button{
+    margin-top: 47px;
+    height: 96px;
+    background-color: var(--neptune-color);
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s linear;
+
+    &:hover{
+      background-color: var(--neptune-hover-color);
+    }
+  }
+}

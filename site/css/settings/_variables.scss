@@ -1,0 +1,19 @@
+:root {
+  --white-text-color: #ffffff;
+  --white-color: #ffffff;
+  --dark-color: #1c2e3d;
+  --neptune-color: #73afba;
+  --neptune-hover-color: #3b666d;
+  --orange-color: #e8594e;
+  --orange-hover-color: #822a24;
+  --gray-color: #788692;
+  --rangoon-green-color: #100e0b;
+  --aque-forest-color: #57a773;
+  --bg-image-color: #3c4a51
+}
+
+@mixin bg-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

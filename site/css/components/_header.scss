@@ -1,0 +1,147 @@
+//-----menu-----
+.menu {
+  position: fixed;
+  left: -150vw;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--neptune-hover-color);
+  z-index: 1000;
+  transition: left 0.3s linear;
+
+  &--visible{
+    left: 0;
+  }
+
+  &__close{
+    position: absolute;
+    top: 7%;
+    right: 9%;
+    width: 40px;
+    height: 40px;
+
+    &-line{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--white-color);
+
+      &:first-child{
+        transform: rotate(45deg);
+      }
+
+      &:last-child{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__nav{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link{
+    color: var(--white-text-color);
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: color 0.3s linear;
+
+    &:hover{
+      color: var(--dark-color);
+    }
+  }
+}
+
+//-----header-----
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__inner {
+    padding: 50px 0;
+  }
+}
+
+//-----social----
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    display: block;
+    @include bg-image;
+    transition: opacity 0.3s linear;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--fb {
+      width: 11px;
+      height: 20px;
+      background-image: url(../img/svg/facebook.svg);
+    }
+
+    &--tw {
+      width: 20px;
+      height: 17px;
+      background-image: url(../img/svg/twitter.svg);
+    }
+  }
+}
+
+//-----logo-----
+.logo {
+  font-weight: 800;
+  color: var(--white-text-color);
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+//-----burger-----
+.burger {
+  width: 48px;
+  height: 10px;
+  position: relative;
+
+  &:hover .burger__line {
+    background-color: var(--orange-color);
+  }
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+    left: 0;
+    top: 0;
+    transition: background-color 0.3s linear;
+
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
